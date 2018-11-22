@@ -17,6 +17,7 @@ O programa conterá as seguintes opções:
 6. Remoção (opcional) (ponto extra) (essa opção só será considerada se as demais funcionarem. Será
 necessária a explicação do código)
 
+
 __Inserção (1)__
 A cada novo cadastro o ISBN deverá ser adicionado ao índice primário estruturado como uma árvore-B.
 Portanto, a cada nova inserção as seguintes mensagens deverão ser mostradas (note que mais de uma pode
@@ -32,10 +33,12 @@ foi realizada.
 Observação: antes de inserir um registro no arquivo principal certifique-se de que a chave não existe no
 índice.
 
+
 __Listar os dados de todos os livros (2)__
 Nessa opção o índice árvore-B deverá ser percorrido em-ordem e a cada ISBN encontrado listar os dados
 associados ao mesmo. Desse modo, essa opção deverá imprimir os dados de todos os livros cadastrados por
 ordem de ISBN
+
 
 __Listar os dados de um livro específico (3)__
 Dado um ISBN o programa retorna os dados do respectivo livro. Para tanto, a busca deve ser feita na árvoreB.
@@ -46,6 +49,7 @@ deverão ser recuperados do arquivo principal;
 * “Chave X não encontrada” indica que a Chave X não está presente na árvore-B e, consequente, no
 arquivo principal.
 
+
 __Consulta Casada (4)__
 Nessa opção o usuário deverá informar dois ISBNs (a serem lidos do arquivo teste). Com o primeiro ISBN
 será gerado um arquivo intermediário contendo as chaves de todos os livros com ISBN >= ao informado.
@@ -54,6 +58,7 @@ ISBN <= ao informado. Para tanto, a busca deverá ser feita na árvore-B. O proc
 irá te auxiliar nessa tarefa. Em seguida o usuário informa se deseja realizar o merge ou o match dos dois
 arquivos. Após o processamento cosequencial são exibidas as informações de todos os livros que satisfazem
 a consulta. Os procedimentos de processamento cosequencial são os apresentados em aula
+
 
 __Carrega Arquivos (5)__
 A fim de facilitar os testes, serão fornecidos três arquivos: (a) “biblioteca.bin”, (b) “busca.bin” e
@@ -75,6 +80,7 @@ memória (um vetor de struct) e ir acessando cada posição conforme as buscas v
 que é possível encerrar a execução e recomeçar a execução, sendo necessário marcar, de algum modo,
 quantos registros já forma utilizados do mesmo.
 
+
 __Remoção (6)__
 Essa opção é opcional e vale um ponto extra na média. A cada ISBN deve-se fazer a remoção do mesmo no
 índice primário estruturado como uma árvore-B (não precisa remover do arquivo principal). Para tanto,
@@ -89,7 +95,6 @@ Observação: antes de remover um registro certifique-se de que a chave existe n
 implementar essa opção, um arquivo adicional aos listados em (e) será fornecido, “remove.bin”, o qual
 conterá uma lista de “ISBNs” a serem removidos. As mesmas observações feitas para os arquivos descritos
 em (e) valem aqui
-
 
 
 __Observações__
